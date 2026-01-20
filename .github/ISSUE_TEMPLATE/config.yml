@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Feature Requests & Balance Feedback
+    url: https://discord.gg/TGZ2kFTDQV
+    about: Share feature ideas, balance suggestions, and general feedback on our Discord server.
+  - name: Account & Purchase Support
+    url: mailto:support@secretplan.com
+    about: For account issues, purchase problems, or billing inquiries, please email our support team.
+  - name: Security Vulnerabilities
+    url: https://github.com/gameshovel/subterfuge-issues/blob/main/SECURITY.md
+    about: For reporting security vulnerabilities, please follow our security policy for responsible disclosure.

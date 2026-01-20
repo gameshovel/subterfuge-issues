@@ -1,0 +1,156 @@
+name: Bug Report
+description: Report a bug in Subterfuge. For feature requests or balance feedback, please use Discord.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thank you for reporting a bug!
+
+        **Important:** This form is for **bug reports only**. For feature requests, balance feedback, or general discussion, please visit our [Discord](https://discord.gg/TGZ2kFTDQV).
+
+        Please fill out all required fields to help us investigate the issue.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which platform are you playing on?
+      options:
+        - iOS
+        - Android
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Device Information
+      description: Make and model of your device
+      placeholder: "e.g., iPhone 14 Pro, Samsung Galaxy S23"
+    validations:
+      required: true
+
+  - type: input
+    id: player-name
+    attributes:
+      label: Your In-Game Name
+      description: Your name in the game. If playing an anonymous game, provide your color instead.
+      placeholder: "e.g., Captain_Sub or Blue"
+    validations:
+      required: true
+
+  - type: input
+    id: game-version
+    attributes:
+      label: Game Version
+      description: Found in Settings
+      placeholder: "e.g., 2.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: game-name
+    attributes:
+      label: Name of Game
+      description: The name of the game in the game list where this bug occurred
+      placeholder: "e.g., Battle for Neptune"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Bug Category
+      description: What area of the game does this bug affect?
+      options:
+        - Gameplay/Combat
+        - Submarine Movement
+        - Outpost
+        - Specialists
+        - Puzzles
+        - Chat
+        - Notifications
+        - Matchmaking
+        - UI
+        - Audio
+        - IAP (In-App Purchases)
+        - Account
+        - Performance
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Provide a clear and concise description of the bug
+      placeholder: Describe what went wrong...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this bug?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: Describe what should have happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: Describe what actually happened...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      description: How often does this bug occur?
+      options:
+        - Always
+        - Often
+        - Sometimes
+        - Rarely
+        - Once
+    validations:
+      required: true
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots/Videos
+      description: Please attach screenshots or videos showing the bug. Drag and drop files here.
+      placeholder: Drag and drop screenshots or videos here...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Confirmation
+      description: Please confirm the following before submitting
+      options:
+        - label: This is a bug report, NOT a feature request or balance feedback (those go to Discord)
+          required: true
+        - label: I have searched existing issues to ensure this bug has not already been reported
+          required: true
