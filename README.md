@@ -1,3 +1,3 @@
 # Subterfuge Issues Tracker
 
-Post newly issues here: https://github.com/gameshovel/subterfuge-issues/issues
+Go here to submit a bug report: https://github.com/gameshovel/subterfuge-issues/issues
