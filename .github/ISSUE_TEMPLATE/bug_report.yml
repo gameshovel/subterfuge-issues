@@ -60,64 +60,24 @@ body:
       required: true
 
   - type: textarea
-    id: description
+    id: bug-details
     attributes:
-      label: Bug Description
-      description: Provide a clear and concise description of the bug
-      placeholder: Describe what went wrong...
-    validations:
-      required: true
+      label: Bug Details
+      description: Please fill out each section below
+      value: |
+        ## What happened?
+        Describe the bug...
 
-  - type: textarea
-    id: steps
-    attributes:
-      label: Steps to Reproduce
-      description: How can we reproduce this bug?
-      placeholder: |
-        1. Go to '...'
-        2. Click on '...'
-        3. See error
-    validations:
-      required: true
+        ## Steps to reproduce
+        1.
+        2.
+        3.
 
-  - type: textarea
-    id: expected
-    attributes:
-      label: Expected Behavior
-      description: What did you expect to happen?
-      placeholder: Describe what should have happened...
-    validations:
-      required: true
+        ## What did you expect to happen?
+        Describe expected behavior...
 
-  - type: textarea
-    id: actual
-    attributes:
-      label: Actual Behavior
-      description: What actually happened?
-      placeholder: Describe what actually happened...
-    validations:
-      required: true
-
-  - type: dropdown
-    id: frequency
-    attributes:
-      label: Frequency
-      description: How often does this bug occur?
-      options:
-        - Always
-        - Often
-        - Sometimes
-        - Rarely
-        - Once
-    validations:
-      required: true
-
-  - type: textarea
-    id: media
-    attributes:
-      label: Screenshots/Videos
-      description: Please attach screenshots or videos showing the bug. Drag and drop files here.
-      placeholder: Drag and drop screenshots or videos here...
+        ## Screenshots/Videos
+        Drag and drop images or videos here...
     validations:
       required: true
 
