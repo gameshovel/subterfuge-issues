@@ -76,8 +76,12 @@ body:
         ## What did you expect to happen?
         Describe expected behavior...
 
-        ## Screenshots/Videos
-        Drag and drop images or videos here...
+        ## Screenshots/Videos (REQUIRED)
+        Drag and drop images or videos here. Bug reports without visual evidence may be closed.
+
+        **How to record your screen:**
+        - **iOS:** Go to Settings → Control Center → add "Screen Recording". Then swipe down from top-right corner and tap the record button.
+        - **Android:** Swipe down from the top of the screen and tap "Screen Record" (may vary by device).
     validations:
       required: true
 
