@@ -1,7 +1,7 @@
 name: Bug Report
 description: Report a bug in Subterfuge. For feature requests or balance feedback, please use Discord.
 title: "[Bug]: "
-labels: ["bug", "needs-triage"]
+labels: ["needs-triage"]
 body:
   - type: markdown
     attributes:
@@ -45,8 +45,8 @@ body:
     id: game-version
     attributes:
       label: Game Version
-      description: Found in Settings
-      placeholder: "e.g., 2.1.0"
+      description: Small white number found on main screen
+      placeholder: "e.g., 10999"
     validations:
       required: true
 
@@ -56,29 +56,6 @@ body:
       label: Name of Game
       description: The name of the game in the game list where this bug occurred
       placeholder: "e.g., Battle for Neptune"
-    validations:
-      required: true
-
-  - type: dropdown
-    id: category
-    attributes:
-      label: Bug Category
-      description: What area of the game does this bug affect?
-      options:
-        - Gameplay/Combat
-        - Submarine Movement
-        - Outpost
-        - Specialists
-        - Puzzles
-        - Chat
-        - Notifications
-        - Matchmaking
-        - UI
-        - Audio
-        - IAP (In-App Purchases)
-        - Account
-        - Performance
-        - Other
     validations:
       required: true
 
